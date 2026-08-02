@@ -1,4 +1,16 @@
 aid: wedgies
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wedgies.png
 name: Wedgies
 description: Wedgies is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
   network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -11,7 +23,12 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-status: inactive
+x-status-reason: 'wedgies.com is an AWS S3 redirect bucket (HTTP 301 -> https://www.wedgies.com/)
+  whose target www.wedgies.com does not resolve (NXDOMAIN); apex HTTPS resets; api.wedgies.com
+  NXDOMAIN. Domain still owned (Route53 NS, Google Workspace MX) but no live website or API surface.
+  Probed 2026-07-21.'
 tags:
 - Company
 apis: []
@@ -23,3 +40,8 @@ maintainers:
 common:
 - type: Website
   url: https://wedgies.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
